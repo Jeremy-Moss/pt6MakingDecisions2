@@ -7,15 +7,18 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
-
+let firstItem = arr[0];
+console.log(firstItem);
 ////////// PROBLEM 2 //////////
 /*
-  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
+  Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. 
+  Console.log the array to verify you no longer have the last item.
 */
 
 //Code Here
-
+let lastItemRemoved = arr.pop();
+console.log(arr);
+console.log(lastItemRemoved);
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
@@ -27,7 +30,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i = 0; i < family.length; i++){
+  console.log(family[i]);
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -42,8 +47,12 @@ let evensArr = []
 */
 
 //Code Here
-
-
+for(let i = 0; i < nums.length; i++){
+  if(i % 2 === 0){
+    evensArr.push[i];
+  }
+}
+console.log(evensArr);
 
 ////////// PROBLEM 5 //////////
 
@@ -52,18 +61,29 @@ var score = 74
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+  Determine if the letter grade of the given variable 'score'. 
+  If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
 //Code Here
-
+if(score >= 90){
+  console.log('A')
+} else if(score >= 80 && score < 90) {
+  console.log('B')
+} else if(score >= 70 && score < 80) {
+  console.log('C')
+} else if(score >= 60 && score < 70) {
+  console.log('D')
+} else {
+  console.log('F')
+}
 
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+var myFavoriteNumbers = [4,8,12,16,20,24,25];
 // Do not edit the code above.
 
 /*
@@ -71,16 +91,22 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
+let someNum = myFavoriteNumbers[4];
 
 ////////// PROBLEM 7 //////////
 
 // Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
-// Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
+// Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. 
+// If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. 
+// (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
-
+if(myFavoriteNumbers.length < 7){
+  console.log('There are not enough elements in this array')
+} else if(myFavoriteNumbers.length > 7){
+  someNum = myFavoriteNumbers[6];
+}
+console.log(someNum);
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
